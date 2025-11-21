@@ -7,7 +7,7 @@
 <body>
 
    
-      <header class="site-header">
+     <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
         <div class="logo">RM</div>
@@ -35,23 +35,18 @@
           <th>Item</th>
           <th>Price</th>
           <th>Qty</th>
-          <th>Total</th>
+          <th>Sub-Total</th>
         </tr>
-        <tr>
-          <td>Round Wall Mirror</td>
-          <td>7,500</td>
-          <td>1</td>
-          <td>7,500</td>
-        </tr>
-        <tr>
-          <td>Vanity Mirror with LED</td>
-          <td>15,200</td>
-          <td>1</td>
-          <td>15,200</td>
-        </tr>
-      </table>
+		     <tbody id="cart-body">
+             </tbody>
+	   </table>
+	   
 
-      <p><b>Total: JMD 22,700</b></p>
+      <p><b>Sub-total: JMD <span id="cart-subtotal">0</span></b></p>
+      <p><b>Discount: JMD <span id="cart-discount">0</span></b></p>
+      <p><b>Tax (15%): JMD <span id="cart-tax">0</span></b></p>
+      <p><b>Total: JMD <span id="cart-total">0</span></b></p>
+	  
       <a href="Checkout.html" class="btn btn-primary">Checkout</a>
       <a href="index.html" class="btn btn-outline">Continue Shopping</a>
     </div>
@@ -61,8 +56,6 @@
     <p>&copy; 2025 Reflections Mirror Co.</p>
   </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
