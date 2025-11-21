@@ -6,7 +6,7 @@
 </head>
 <body>
 
-     <header class="site-header">
+    <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
         <div class="logo">RM</div>
@@ -25,36 +25,43 @@
       </nav>
     </div>
   </header>
-  
+
   <main class="container">
     <div class="form-card">
       <h2>Invoice</h2>
-      <p>Date: October 2025</p>
+      
+	  <p><b>Date:</b> <span id="invoice-date"></p>
+	  
+	  <p><b>Customer:</b> <span id="invoice-customer-name"></span></p>
+      <p><b>Address:</b> <span id="invoice-customer-address"></span></p>
+      <p><b>Phone:</b> <span id="invoice-customer-phone"></span></p>
+	  
+      <br>
 
       <table class="table">
-        <tr>
-          <th>Product</th>
-          <th>Unit Price</th>
-          <th>Qty</th>
-          <th>Total</th>
-        </tr>
-        <tr>
-          <td>Round Wall Mirror</td>
-          <td>7,500</td>
-          <td>1</td>
-          <td>7,500</td>
-        </tr>
-        <tr>
-          <td>Vanity Mirror with LED</td>
-          <td>15,200</td>
-          <td>1</td>
-          <td>15,200</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Unit Price (JMD)</th>
+            <th>Qty</th>
+            <th>Total (JMD)</th>
+          </tr>
+        </thead>
+        <tbody id="invoice-body">
+        </tbody>
       </table>
 
-      <p><b>Subtotal:</b> JMD 22,700</p>
-      <p><b>Tax (15%):</b> JMD 3,405</p>
-      <p><b>Total:</b> JMD 26,105</p>
+      <p><b>Subtotal: JMD <span id="invoice-subtotal">0</span></b></p>
+      <p><b>Discount: JMD <span id="invoice-discount">0</span></b></p>
+      <p><b>Tax (15%): JMD <span id="invoice-tax">0</span></b></p>
+      <p><b>Total: JMD <span id="invoice-total">0</span></b></p>
+      <p><b>Amount Paid: JMD <span id="invoice-paid">0</span></b></p>
+      <p><b>Change: JMD <span id="invoice-change">0</span></b></p>
+
+      <br>
+
+       <a href="index.html" class="btn btn-primary">Back to Home</a>
+
     </div>
   </main>
 
@@ -62,5 +69,10 @@
     <p>&copy; 2025 Reflections Mirror Co.</p>
   </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
+
+
+ 
+  
