@@ -7,7 +7,7 @@
 <body>
 
   
-   <header class="site-header">
+  <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand">
         <div class="logo">RM</div>
@@ -26,28 +26,34 @@
       </nav>
     </div>
   </header>
-  
+
   <main class="container">
     <div class="form-card">
       <h2>Create Account</h2>
-      <form>
+      <form id="register-form">
+	  <div id="register-error" class="error"></div>
+	  
         <label>Full Name:</label>
-        <input type="text" placeholder="Your name">
+        <input type="text" id="reg-name" placeholder="Your name">
 
         <label>Date of Birth:</label>
-        <input type="date">
+        <input type="date" id="reg-dob">
 
         <label>Email:</label>
-        <input type="email" placeholder="name@example.com">
+        <input type="email" id="reg-email" placeholder="name@example.com">
 
         <label>Username:</label>
-        <input type="text">
+        <input type="text" id="reg-username">
 
         <label>Password:</label>
-        <input type="password">
+        <input type="password"id="reg-password">
 
         <br><br>
-        <a href="login.html" class="btn btn-primary"><input type="submit" value="Register" class="btn btn-primary"></a>
+
+        <input type="submit" value="Register" class="btn btn-primary">
+		
+		
+		
       </form>
     </div>
   </main>
@@ -56,8 +62,6 @@
     <p>&copy; 2025 Reflections Mirror Co.</p>
   </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
